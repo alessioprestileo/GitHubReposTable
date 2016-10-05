@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div  #titleRow
+        class="row">
+    <div class="col-xs-offset-1 col-xs-10"
+         style="text-align: center">
+      <h1>
+        {{title}}
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div #tableRow
+         class="col-sm-offset-1 col-sm-10"
+         style="text-align: center">
+      <app-table *ngIf="tableInput"
+                 [tableInput]="tableInput">
+      </app-table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["init.js"],"names":[],"mappings":";;AAAA;AACA,OAAO,KAAP,IAAgB,EAAhB","file":"init-compiled.js","sourcesContent":["// Initialize app property as an empty object in window object\nwindow['app'] = {};\n"]}
