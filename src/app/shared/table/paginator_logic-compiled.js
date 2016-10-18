@@ -36,7 +36,7 @@
     var sliceStart = 0;
     var sliceEnd = void 0;
     do {
-      sliceEnd = sliceStart + 20 <= items.length ? sliceStart + 20 : items.length;
+      sliceEnd = sliceStart + itemsPerPage <= items.length ? sliceStart + itemsPerPage : items.length;
       itemsByPage.push(items.slice(sliceStart, sliceEnd));
       sliceStart += itemsPerPage;
     } while (sliceStart < items.length);

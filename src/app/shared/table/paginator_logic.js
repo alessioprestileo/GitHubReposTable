@@ -38,8 +38,8 @@
       let sliceEnd;
       do
       {
-        sliceEnd = (sliceStart + 20 <= items.length) ?
-        sliceStart + 20 : items.length;
+        sliceEnd = (sliceStart + itemsPerPage <= items.length) ?
+        sliceStart + itemsPerPage : items.length;
         itemsByPage.push(items.slice(sliceStart, sliceEnd));
         sliceStart += itemsPerPage;
       }
